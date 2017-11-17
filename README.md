@@ -1169,6 +1169,19 @@ RDS
 -	🔸**DB migration to RDS:** While importing your database into RDS ensure you take into consideration the maintenance window settings. If a backup is running at the same time, your import can take a considerably longer time than you would have expected.
 -	[Database sizes are limited](https://aws.amazon.com/about-aws/whats-new/2015/06/amazon-rds-increases-storage-limits-to-6TB-for-piops-and-gp2/) to **6TB** for all database engines except for SQL Server which has a **4TB** limit and Aurora which supports up to **64TB** databases.
 
+
+RDS PostgreSQL
+--------------
+
+### RDS PostgreSQL Basics
+
+-       RDS offers PostgreSQL versions 9.3, 9.4, 9.5 and 9.6.
+
+### RDS PostgreSQL Tips
+
+-       PostgreSQL allows advanced levels of tuning beyond the default setup, which by all accounts is already well done, using DB Param Groups, for detailed information on each Param Group Value and what they do, visit the [Working with PostgreSQL Parameters](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html) page.
+-       🔸**No SUPER privileges.**Much like many of the other RDS flavours/distributions, super privileges are unavailable. 
+
 RDS MySQL and MariaDB
 ---------------------
 
